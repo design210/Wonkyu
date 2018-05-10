@@ -1,0 +1,75 @@
+@import '/test/scss/mixin';
+@import '/test/scss/primary';
+@import '/test/scss/reset';
+.wrap{
+  min-width:1200px;
+  display:flex; 
+  @include size (100%, 100vh);
+}
+.content_wrap{
+  @include size (50%, 100vh);
+  position:relative
+}
+.ui01{
+  @include size (100%, 100vh);
+  background: $bgColor01;  
+}
+#backstretch01{
+  @include size (100%, 100vh);
+}
+#backstretch01{
+  overflow: hidden;
+}
+nav{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height:100vh;
+  font-size: 1.5rem
+}
+nav li{
+  float:left;
+  @include ml(1rem)
+}
+.vertical {
+  color:$color01; 
+  writing-mode:tb-rl;
+  @include rotate(0deg);
+  white-space:nowrap;
+  @include absolute-R(5rem, 0.5rem);
+}
+.vertical span{
+  display:inline-block;
+  @include mt(2rem)
+}
+.gallery_wrap img{
+  width:100%
+}
+.gallery_wrap{
+  @include size (100%, 100vh);
+  overflow-y:scroll
+}
+.menu01_01 {
+  @include aniName (cd-bounce-left);
+  @include aniTime (0.3s);
+}
+.menu01_02 {
+  @include aniName (cd-bounce-left);
+  @include aniTime (0.5s);
+}
+.menu01_03 {
+  @include aniName (cd-bounce-left);
+  @include aniTime (0.7s);
+}
+
+@keyframes cd-bounce-left {
+  0% {
+    @include keyframes(.2, -50px);
+  }
+  60% {
+    @include keyframes(.7, 15px);
+  }
+  100% {
+    @include keyframes(1, 0px);
+  }
+}

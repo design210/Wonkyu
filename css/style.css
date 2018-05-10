@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/*공통*/
+@import url("https://fonts.googleapis.com/css?family=Lora");
+table {
+  width: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset, img {
+  border: 0 none;
+}
+
+dl, ul, ol, menu, li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+}
+
+input, select, textarea, button {
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: '';
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+html {
+  font-size: 10px;
+}
+
+.wrap {
+  min-width: 1200px;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.content_wrap {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+.ui01 {
+  width: 100%;
+  height: 100vh;
+  background: #f1e0bb;
+}
+
+#backstretch01 {
+  width: 100%;
+  height: 100vh;
+}
+
+#backstretch01 {
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+nav li {
+  float: left;
+  margin-left: 1rem;
+}
+
+.vertical {
+  color: #333;
+  writing-mode: tb-rl;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  white-space: nowrap;
+  position: absolute;
+  top: 50px;
+  right: 5px;
+}
+
+.vertical span {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.gallery_wrap img {
+  width: 100%;
+}
+
+.gallery_wrap {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.menu01_01 {
+  -webkit-animation-name: cd-bounce-left;
+  -moz-animation-name: cd-bounce-left;
+  animation-name: cd-bounce-left;
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+.menu01_02 {
+  -webkit-animation-name: cd-bounce-left;
+  -moz-animation-name: cd-bounce-left;
+  animation-name: cd-bounce-left;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.menu01_03 {
+  -webkit-animation-name: cd-bounce-left;
+  -moz-animation-name: cd-bounce-left;
+  animation-name: cd-bounce-left;
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
+@keyframes cd-bounce-left {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+  60% {
+    opacity: 0.7;
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

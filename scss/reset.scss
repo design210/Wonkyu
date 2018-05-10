@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+table{width:100%}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+body{font-family: 'Lora', serif;font-size:1.2rem}
+input,select,textarea,button {vertical-align:middle}
+img{vertical-align:bottom}
+*, *::after, *::before {box-sizing: border-box;}
+.clear{clear:both}
+.clearfix:after{display:table;clear:both;content:'';overflow:hidden;visibility:hidden;height:0;width:0;}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+a {text-decoration:none;color:$color01}
+html{font-size:10px}

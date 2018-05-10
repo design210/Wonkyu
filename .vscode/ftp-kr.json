@@ -1,0 +1,16 @@
+{
+    "host": "222.236.44.114",
+    "username": "design210",
+    "password": "sangbong",
+    "remotePath": "/test",
+    "protocol": "ftp",
+    "port": 19988,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

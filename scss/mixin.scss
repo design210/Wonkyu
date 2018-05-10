@@ -1,0 +1,46 @@
+@mixin size ($width, $height){
+  width: $width;
+  height: $height;
+}
+@mixin aniName ($name){
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  animation-name: $name;
+}
+@mixin aniTime ($time){
+  -webkit-animation-duration: $time;
+  -moz-animation-duration: $time;
+  animation-duration: $time;
+}
+@mixin keyframes($alpha, $pos){
+  opacity: $alpha;
+  -webkit-transform: translateX($pos);
+  -moz-transform: translateX($pos);
+  -ms-transform: translateX($pos);
+  -o-transform: translateX($pos);
+  transform: translateX($pos);
+}
+@mixin rotate($rotate){
+  -webkit-transform:rotate($rotate);
+  -moz-transform:rotate($rotate);
+  -o-transform: rotate($rotate);
+}
+@mixin absolute-R($top, $right){
+  position:absolute;
+  top:$top;
+  right:$right
+}
+@mixin absolute-L($top, $left){
+  position:absolute;
+  top:$top;
+  right:$left
+}
+@mixin mt ($rem){margin-top: $rem;}
+@mixin mb ($rem){margin-bottom: $rem;}
+@mixin mr ($rem){margin-right: $rem;}
+@mixin ml ($rem){margin-left: $rem;}
+@mixin pt ($rem){padding-top: $rem;}
+@mixin pb ($rem){padding-bottom: $rem;}
+@mixin pr ($rem){padding-right: $rem;}
+@mixin pl ($rem){padding-left: $rem;}
+
