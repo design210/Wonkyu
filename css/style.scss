@@ -1,6 +1,6 @@
-@import '/test/scss/mixin';
-@import '/test/scss/primary';
-@import '/test/scss/reset';
+@import 'mixin';
+@import 'primary';
+@import 'reset';
 .wrap{
   min-width:1200px;
   display:flex; 
